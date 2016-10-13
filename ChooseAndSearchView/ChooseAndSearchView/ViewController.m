@@ -22,9 +22,6 @@
     
     [self setUpTwoSearchV];
     
-    
-    
-    
 }
 
 - (void)didReceiveMemoryWarning {

@@ -131,11 +131,11 @@
 				F63F095F1D7EB3BA007B71C4 /* SeachAndChooseView.h */,
 				F63F09601D7EB3BA007B71C4 /* SeachAndChooseView.m */,
 				F63F09631D7EB3D9007B71C4 /* SeachAndChooseView.xib */,
-				F64799C11D7FDC1C00E1C0B2 /* SearchInfo.h */,
-				F64799C21D7FDC1C00E1C0B2 /* SearchInfo.m */,
 				F64799C51D80012400E1C0B2 /* SimpleCell.h */,
 				F64799C61D80012400E1C0B2 /* SimpleCell.m */,
 				F64799C41D80012400E1C0B2 /* SimpleCell.xib */,
+				F64799C11D7FDC1C00E1C0B2 /* SearchInfo.h */,
+				F64799C21D7FDC1C00E1C0B2 /* SearchInfo.m */,
 			);
 			name = SeachAndChooseView;
 			sourceTree = "<group>";
