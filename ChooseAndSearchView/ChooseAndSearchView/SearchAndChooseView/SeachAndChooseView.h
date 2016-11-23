@@ -7,6 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "SearchInfo.h"
 
 @interface SeachAndChooseView : UIView
 @property (weak, nonatomic) IBOutlet UILabel *titleLabel;
@@ -15,7 +16,10 @@
 - (IBAction)chooseBtnAction:(UIButton *)sender;
 
 @property (nonatomic,strong) NSMutableArray *allTableArr;/**< 所有的数据 */
+@property (nonatomic,strong) SearchInfo *selectedInfo;/**< 选中的信息 */
+
 +(instancetype)initSearchView;
+
 
 /**
  *  将数组转换为相应类型的SearchInfo

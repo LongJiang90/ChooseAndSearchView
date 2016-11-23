@@ -7,7 +7,6 @@
 //
 
 #import "SeachAndChooseView.h"
-#import "SearchInfo.h"
 #import "SimpleCell.h"
 
 @interface SeachAndChooseView()<UITableViewDelegate,UITableViewDataSource>{
@@ -141,13 +140,14 @@
 
 -(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
     // 取消Cell的选中状态
-    [tableView deselectRowAtIndexPath:indexPath animated:NO];
+//    [tableView deselectRowAtIndexPath:indexPath animated:NO];
     
     id object = self.tbArr[indexPath.row];
     
     if ([object isKindOfClass:[SearchInfo class]]) {
         SearchInfo *info = (SearchInfo *)object;
         self.textF.text = info.sName;
+        self.selectedInfo = info;
     }
     
 //    //负责人
@@ -197,7 +197,7 @@
 
 -(UITableView *)tableView{
     if (_tableView == nil) {
-        _tableView = [[UITableView alloc] initWithFrame:CGRectMake(self.textF.frame.origin.x, self.textF.frame.origin.y, 0, 0) style:UITableViewStylePlain];
+        _tableView = [[UITableView alloc] initWithFrame:CGRectMake(10, self.textF.frame.origin.y, 0, 0) style:UITableViewStylePlain];
         _tableView.backgroundColor = [UIColor whiteColor];
         _tableView.layer.borderWidth = 1.0;
         _tableView.layer.borderColor = [UIColor colorWithRed:0.7264 green:0.7264 blue:0.7264 alpha:1.0].CGColor;
@@ -208,7 +208,7 @@
         _tableView.rowHeight = UITableViewAutomaticDimension;
         _tableView.estimatedRowHeight = 44;
         [self addSubview:_tableView];
-        //        [self.bgView bringSubviewToFront:_tableView];
+        [self.superview bringSubviewToFront:_tableView];
     }
     return _tableView;
 }
@@ -233,19 +233,18 @@
 }
 
 -(NSMutableArray *)getSearchArrayByArr:(NSMutableArray *)array andClassName:(NSString *)classN{
-//    NSClassFromString(classN) *info = array[0];
+    
     NSMutableArray *arr = [NSMutableArray array];
-    
     for (int i=0; i<array.count; i++) {
-        SearchInfo *sInfo = [[SearchInfo alloc] init];
-        sInfo.sID = @"12";
-        sInfo.sName = @"Name";
-        
-        [arr addObject:sInfo];
+        id dataInfo = array[i];
+        if ([dataInfo isKindOfClass:NSClassFromString(classN)]) {
+            SearchInfo *sInfo = [[SearchInfo alloc] init];
+            sInfo.sID = @"12";
+            sInfo.sName = @"Name";
+            
+            [arr addObject:sInfo];
+        }
     }
-    
-    
-    
     return arr;
 }
 
