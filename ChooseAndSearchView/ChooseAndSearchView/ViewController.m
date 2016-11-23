@@ -34,7 +34,7 @@
 }
 
 -(void)setUpSearchV{
-    NSArray *nationalityArr = @[@"中国",@"英国",@"美国",@"法国",@"英格兰",@"意大利",@"伊拉克",@"新加坡"];
+    NSArray *nationalityArr = @[@"中国",@"英国",@"美国",@"法国",@"英格兰",@"意大利",@"伊拉克",@"新加坡",@"泰国"];
     
     SeachAndChooseView *searchV = [SeachAndChooseView initSearchView];
     searchV.frame = CGRectMake(15, 20, self.view.frame.size.width-30, 82);
