@@ -77,22 +77,13 @@
 #pragma mark - 按钮响应函数
 - (IBAction)chooseBtnAction:(UIButton *)sender {
     
-//    int index = btn.tag - 100;
-//    UITextField *textF = self.allTableArr[index-1];
-//    selectTextF = textF;
-    
     self.tbArr = self.allTableArr.mutableCopy;
     if (isOpenList == YES) {
         [self hiddnTableView];
     }else{
-//        if (ScreenHeight == 568) {
-            [self showTableViewByView:self.textF andCount:5];
-//        }else{
-//            [self showTableViewByView:self.textF andCount:5];
-//        }
+        [self showTableViewByView:self.textF andCount:5];
     }
     [self.tableView reloadData];
-    
 }
 
 #pragma mark - 网络请求
@@ -122,24 +113,10 @@
         [cell setUpCellByInfo:info.sName];
     }
     
-//    //负责人
-//    if ([object isKindOfClass:[MailListInfo class]]) {
-//        MailListInfo *info = (MailListInfo *)object;
-//        cell.textLabel.text = info.Name;
-//    }
-//    
-//    //区域
-//    if ([object isKindOfClass:[AddressInfo class]]) {
-//        AddressInfo *info = (AddressInfo *)object;
-//        cell.textLabel.text = info.Name;
-//    }
-    
-    
     return cell;
 }
 
 -(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
-    // 取消Cell的选中状态
 //    [tableView deselectRowAtIndexPath:indexPath animated:NO];
     
     id object = self.tbArr[indexPath.row];
@@ -150,33 +127,8 @@
         self.selectedInfo = info;
     }
     
-//    //负责人
-//    if ([object isKindOfClass:[MailListInfo class]]) {
-//        MailListInfo *info = (MailListInfo *)object;
-//        selectPeopleinfo = info;
-//        selectTextF.text = info.Name;
-//    }
-//    
-//    //区域
-//    if ([object isKindOfClass:[AddressInfo class]]) {
-//        AddressInfo *info = (AddressInfo *)object;
-//        selectAddress = info;
-//        selectTextF.text = info.Name;
-//    }
-    
-    
     [self hiddnTableView];
     
-}
-
-//然后根据具体的业务场景去写逻辑就可以了,比如
-- (BOOL)gestureRecognizer:(UIGestureRecognizer *)gestureRecognizer shouldReceiveTouch:(UITouch *)touch {
-    //Tip:我们可以通过打印touch.view来看看具体点击的view是具体是什么名称,像点击UITableViewCell时响应的View则是UITableViewCellContentView.
-    if ([NSStringFromClass([touch.view class]) isEqualToString:@"UITableViewCellContentView"] || [touch.view isKindOfClass:[UIButton class]]) {
-        //返回为NO则屏蔽手势事件
-        return NO;
-    }
-    return YES;
 }
 
 #pragma mark - 组装数据、创建视图、自定义方法
@@ -248,17 +200,17 @@
     return arr;
 }
 
-//如果点击无法响应，即无法传递点击，判断点击的坐标是否是tableView所包含的区域,如果是则让tableView响应点击
+//@TODO:该函数用于解决：tableView展开时 超出self时，无法选中Cell
 - (UIView *)hitTest:(CGPoint)point withEvent:(UIEvent *)event {
     UIView *view = [super hitTest:point withEvent:event];
     
     if (view == nil) {
         //将坐标由当前视图发送到 指定视图 fromView是无法响应的范围小父视图
-        
         CGPoint stationPoint = [self.tableView convertPoint:point fromView:self];
         
         if (CGRectContainsPoint(self.tableView.bounds, stationPoint))
         {
+            //如果点击无法响应，即无法传递点击，判断点击的坐标是否是tableView所包含的区域,如果是则让tableView响应点击
             view = self.tableView;
         }
         

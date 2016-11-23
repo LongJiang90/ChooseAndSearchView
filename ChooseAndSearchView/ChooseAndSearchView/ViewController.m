@@ -29,6 +29,10 @@
     // Dispose of any resources that can be recreated.
 }
 
+-(void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event{
+    [self.view endEditing:YES];
+}
+
 -(void)setUpSearchV{
     NSArray *nationalityArr = @[@"中国",@"英国",@"美国",@"法国",@"英格兰",@"意大利",@"伊拉克",@"新加坡"];
     

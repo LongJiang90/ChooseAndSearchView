@@ -20,17 +20,6 @@
 
 +(instancetype)initSearchView;
 
-
-/**
- *  将数组转换为相应类型的SearchInfo
- *
- *  @param array  原来的数组
- *  @param classN 对象类型名称
- *
- *  @return 返回全部包含SearchInfo的数组
- */
--(NSMutableArray *)getSearchArrayByArr:(NSMutableArray *)array andClassName:(NSString *)classN;
-
 /**
  *  显示选择表单
  *
