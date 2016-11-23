@@ -43,7 +43,7 @@
     NSMutableArray *array1 = [NSMutableArray array];
     for (int i=0; i<nationalityArr.count; i++) {
         SearchInfo *sInfo = [[SearchInfo alloc] init];
-        sInfo.sID = @"1";
+        sInfo.sID = [NSString stringWithFormat:@"%d",i+1];
         sInfo.sName = nationalityArr[i];
         [array1 addObject:sInfo];
     }
