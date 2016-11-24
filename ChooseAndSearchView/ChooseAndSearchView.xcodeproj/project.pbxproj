@@ -14,11 +14,11 @@
 		F63F09471D7EB355007B71C4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F63F09461D7EB355007B71C4 /* Assets.xcassets */; };
 		F63F094A1D7EB355007B71C4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F63F09481D7EB355007B71C4 /* LaunchScreen.storyboard */; };
 		F63F09551D7EB355007B71C4 /* ChooseAndSearchViewUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = F63F09541D7EB355007B71C4 /* ChooseAndSearchViewUITests.m */; };
-		F63F09611D7EB3BA007B71C4 /* SeachAndChooseView.m in Sources */ = {isa = PBXBuildFile; fileRef = F63F09601D7EB3BA007B71C4 /* SeachAndChooseView.m */; };
-		F63F09641D7EB3D9007B71C4 /* SeachAndChooseView.xib in Resources */ = {isa = PBXBuildFile; fileRef = F63F09631D7EB3D9007B71C4 /* SeachAndChooseView.xib */; };
-		F64799C31D7FDC1C00E1C0B2 /* SearchInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = F64799C21D7FDC1C00E1C0B2 /* SearchInfo.m */; };
-		F64799C71D80012400E1C0B2 /* SimpleCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F64799C41D80012400E1C0B2 /* SimpleCell.xib */; };
-		F64799C81D80012400E1C0B2 /* SimpleCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F64799C61D80012400E1C0B2 /* SimpleCell.m */; };
+		F6F38BBB1DE684E800101C91 /* SeachAndChooseView.m in Sources */ = {isa = PBXBuildFile; fileRef = F6F38BB41DE684E800101C91 /* SeachAndChooseView.m */; };
+		F6F38BBC1DE684E800101C91 /* SeachAndChooseView.xib in Resources */ = {isa = PBXBuildFile; fileRef = F6F38BB51DE684E800101C91 /* SeachAndChooseView.xib */; };
+		F6F38BBD1DE684E800101C91 /* SearchInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = F6F38BB71DE684E800101C91 /* SearchInfo.m */; };
+		F6F38BBE1DE684E800101C91 /* SimpleCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F6F38BB91DE684E800101C91 /* SimpleCell.m */; };
+		F6F38BBF1DE684E800101C91 /* SimpleCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F6F38BBA1DE684E800101C91 /* SimpleCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,14 +45,14 @@
 		F63F09501D7EB355007B71C4 /* ChooseAndSearchViewUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ChooseAndSearchViewUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F63F09541D7EB355007B71C4 /* ChooseAndSearchViewUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ChooseAndSearchViewUITests.m; sourceTree = "<group>"; };
 		F63F09561D7EB355007B71C4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		F63F095F1D7EB3BA007B71C4 /* SeachAndChooseView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SeachAndChooseView.h; path = SearchAndChooseView/SeachAndChooseView.h; sourceTree = "<group>"; };
-		F63F09601D7EB3BA007B71C4 /* SeachAndChooseView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SeachAndChooseView.m; path = SearchAndChooseView/SeachAndChooseView.m; sourceTree = "<group>"; };
-		F63F09631D7EB3D9007B71C4 /* SeachAndChooseView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = SeachAndChooseView.xib; path = SearchAndChooseView/SeachAndChooseView.xib; sourceTree = "<group>"; };
-		F64799C11D7FDC1C00E1C0B2 /* SearchInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SearchInfo.h; path = SearchAndChooseView/SearchInfo.h; sourceTree = "<group>"; };
-		F64799C21D7FDC1C00E1C0B2 /* SearchInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SearchInfo.m; path = SearchAndChooseView/SearchInfo.m; sourceTree = "<group>"; };
-		F64799C41D80012400E1C0B2 /* SimpleCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = SimpleCell.xib; path = SearchAndChooseView/SimpleCell.xib; sourceTree = "<group>"; };
-		F64799C51D80012400E1C0B2 /* SimpleCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SimpleCell.h; path = SearchAndChooseView/SimpleCell.h; sourceTree = "<group>"; };
-		F64799C61D80012400E1C0B2 /* SimpleCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SimpleCell.m; path = SearchAndChooseView/SimpleCell.m; sourceTree = "<group>"; };
+		F6F38BB31DE684E800101C91 /* SeachAndChooseView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SeachAndChooseView.h; sourceTree = "<group>"; };
+		F6F38BB41DE684E800101C91 /* SeachAndChooseView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SeachAndChooseView.m; sourceTree = "<group>"; };
+		F6F38BB51DE684E800101C91 /* SeachAndChooseView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SeachAndChooseView.xib; sourceTree = "<group>"; };
+		F6F38BB61DE684E800101C91 /* SearchInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SearchInfo.h; sourceTree = "<group>"; };
+		F6F38BB71DE684E800101C91 /* SearchInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SearchInfo.m; sourceTree = "<group>"; };
+		F6F38BB81DE684E800101C91 /* SimpleCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SimpleCell.h; sourceTree = "<group>"; };
+		F6F38BB91DE684E800101C91 /* SimpleCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SimpleCell.m; sourceTree = "<group>"; };
+		F6F38BBA1DE684E800101C91 /* SimpleCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SimpleCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,7 +98,7 @@
 				F63F093E1D7EB354007B71C4 /* AppDelegate.m */,
 				F63F09401D7EB354007B71C4 /* ViewController.h */,
 				F63F09411D7EB354007B71C4 /* ViewController.m */,
-				F63F09621D7EB3C1007B71C4 /* SeachAndChooseView */,
+				F6F38BB21DE684E800101C91 /* SearchAndChooseView */,
 				F63F09431D7EB354007B71C4 /* Main.storyboard */,
 				F63F09461D7EB355007B71C4 /* Assets.xcassets */,
 				F63F09481D7EB355007B71C4 /* LaunchScreen.storyboard */,
@@ -125,19 +125,20 @@
 			path = ChooseAndSearchViewUITests;
 			sourceTree = "<group>";
 		};
-		F63F09621D7EB3C1007B71C4 /* SeachAndChooseView */ = {
+		F6F38BB21DE684E800101C91 /* SearchAndChooseView */ = {
 			isa = PBXGroup;
 			children = (
-				F63F095F1D7EB3BA007B71C4 /* SeachAndChooseView.h */,
-				F63F09601D7EB3BA007B71C4 /* SeachAndChooseView.m */,
-				F63F09631D7EB3D9007B71C4 /* SeachAndChooseView.xib */,
-				F64799C51D80012400E1C0B2 /* SimpleCell.h */,
-				F64799C61D80012400E1C0B2 /* SimpleCell.m */,
-				F64799C41D80012400E1C0B2 /* SimpleCell.xib */,
-				F64799C11D7FDC1C00E1C0B2 /* SearchInfo.h */,
-				F64799C21D7FDC1C00E1C0B2 /* SearchInfo.m */,
+				F6F38BB31DE684E800101C91 /* SeachAndChooseView.h */,
+				F6F38BB41DE684E800101C91 /* SeachAndChooseView.m */,
+				F6F38BB51DE684E800101C91 /* SeachAndChooseView.xib */,
+				F6F38BB61DE684E800101C91 /* SearchInfo.h */,
+				F6F38BB71DE684E800101C91 /* SearchInfo.m */,
+				F6F38BB81DE684E800101C91 /* SimpleCell.h */,
+				F6F38BB91DE684E800101C91 /* SimpleCell.m */,
+				F6F38BBA1DE684E800101C91 /* SimpleCell.xib */,
 			);
-			name = SeachAndChooseView;
+			name = SearchAndChooseView;
+			path = ../../SearchAndChooseView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -222,8 +223,8 @@
 			files = (
 				F63F094A1D7EB355007B71C4 /* LaunchScreen.storyboard in Resources */,
 				F63F09471D7EB355007B71C4 /* Assets.xcassets in Resources */,
-				F64799C71D80012400E1C0B2 /* SimpleCell.xib in Resources */,
-				F63F09641D7EB3D9007B71C4 /* SeachAndChooseView.xib in Resources */,
+				F6F38BBF1DE684E800101C91 /* SimpleCell.xib in Resources */,
+				F6F38BBC1DE684E800101C91 /* SeachAndChooseView.xib in Resources */,
 				F63F09451D7EB355007B71C4 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -242,12 +243,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F64799C31D7FDC1C00E1C0B2 /* SearchInfo.m in Sources */,
+				F6F38BBD1DE684E800101C91 /* SearchInfo.m in Sources */,
 				F63F09421D7EB354007B71C4 /* ViewController.m in Sources */,
 				F63F093F1D7EB354007B71C4 /* AppDelegate.m in Sources */,
-				F63F09611D7EB3BA007B71C4 /* SeachAndChooseView.m in Sources */,
+				F6F38BBB1DE684E800101C91 /* SeachAndChooseView.m in Sources */,
 				F63F093C1D7EB354007B71C4 /* main.m in Sources */,
-				F64799C81D80012400E1C0B2 /* SimpleCell.m in Sources */,
+				F6F38BBE1DE684E800101C91 /* SimpleCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
